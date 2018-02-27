@@ -150,7 +150,7 @@
                 </div>
                 <div class="modal-body">
                         <h2 id="friendName"></h2>
-                        <img id="friendImg" src="../data/images/jimmy.jpeg" alt="">
+                        <img id="friendImg" src="../data/images/jimmy.jpg" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -186,7 +186,7 @@
             $.post(currUrl + "/api/friends", newFriend, function(data){
                
                     $("#friendName").text(data.name);
-                    $("#friendImg").attr("src", "../" + data.photo);
+                    $("#friendImg").attr("src", currUrl + "../" + data.photo);
                     $("#results").modal("toggle");
                     
                     $("#name").val("");

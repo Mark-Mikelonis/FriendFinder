@@ -12,7 +12,7 @@ module.exports = function(app){
     app.post("/api/friends", function(req, res){
         // handles incoming survey results
         friends.push(req.body);
-        console.log("in API post: " + res);
+        console.log("in API post: ");
        
         res.json(friends[1]);
     });
