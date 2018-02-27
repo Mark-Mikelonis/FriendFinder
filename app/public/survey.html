@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+</head>
+<body>
+    <div class="span">
+        <div class="col-md-8 offset-md-2">
+    <h2>Survey Questions</h2>
+	<hr>
+
+	<h3><strong>About You</strong></h3>
+	<h4>Name (Required)</h4>
+	<input type="text" id="name" class="form-control" required >
+
+	<h4>Link to Photo Image (Required)</h4>
+	<input type="text" id="photo" class="form-control" required >
+	<hr>
+    <h3><strong>Question 1</strong></h3>
+		<h4>You have a difficult time concentrating when music is playing</h4>
+	 	<select data-placeholder="" class="chosen-select" id="question1">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+    <h3><strong>Question 2</strong></h3>
+		<h4>You have dreams about flying</h4>
+	 	<select data-placeholder="" class="chosen-select" id="question2">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+    <h3><strong>Question 3</strong></h3>
+		<h4>You enjoy playing in the rain</h4>
+	 	<select data-placeholder="" class="chosen-select" id="question3">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select> 
+    <h3><strong>Question 4</strong></h3>
+		<h4>You have a difficult time existing without your phone</h4>
+	 	<select data-placeholder="" class="chosen-select" id="question4">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>    
+    <h3><strong>Question 5</strong></h3>
+		<h4>You frequently cry during emotional movies</h4>
+	 	<select data-placeholder="" class="chosen-select" id="question5">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>      
+    <h3><strong>Question 6</strong></h3>
+		<h4>You will wait for a spot to park closer to a store</h4>
+	 	<select data-placeholder="" class="chosen-select" id="question6">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>      
+    <h3><strong>Question 7</strong></h3>
+		<h4>You don't trust people who don't make eye contact when talking to you</h4>
+	 	<select data-placeholder="" class="chosen-select" id="question7">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>      
+    <h3><strong>Question 8</strong></h3>
+		<h4>You prefer heavy metal to folk music</h4>
+	 	<select data-placeholder="" class="chosen-select" id="question8">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+    <h3><strong>Question 9</strong></h3>
+		<h4>You like tequila more than any other spirit</h4>
+	 	<select data-placeholder="" class="chosen-select" id="question9">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+    <h3><strong>Question 10</strong></h3>
+		<h4>You don't really like taking surveys</h4>
+	 	<select data-placeholder="" class="chosen-select" id="question10">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+    </div>
+    </div>
+    <br>
+    <p>     
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i> Submit</button>            
+    </p>
+    <hr>
+    <footer class="footer">
+	      <div class="container ">
+              <div class="row">
+                  <div class="col-md-4 offset-md-4">
+                    <p><a href="/api/friends">API Friends List</a></p>
+                </div>
+            </div>  
+	      </div>
+    </footer>
+    <div id="results" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Your Match!</h5>
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button> -->
+                </div>
+                <div class="modal-body">
+                        <h2 id="friendName"></h2>
+                        <img id="friendImg" src="../data/images/jimmy.jpeg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    <script type="text/javascript">
+
+        $("#submit").on("click", function(event){
+            event.preventDefault();
+            
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [
+                $("#question1").val(),
+                $("#question2").val(),
+                $("#question3").val(),
+                $("#question4").val(),
+                $("#question5").val(),
+                $("#question6").val(),
+                $("#question7").val(),
+                $("#question8").val(),
+                $("#question9").val(),
+                $("#question10").val()]
+            }
+            console.log("newFriend: " + newFriend.name);
+            console.log("newFriend: " + newFriend.photo);
+            console.log("newFriend: " + newFriend.scores);
+            var currUrl = window.location.origin;
+            $.post(currUrl + "/api/friends", newFriend, function(data){
+               
+                    $("#friendName").text(data.name);
+                    $("#friendImg").attr("src", "../" + data.photo);
+                    $("#results").modal("toggle");
+                    
+                    $("#name").val("");
+                    $("#photo").val("");
+                    $("#question1").val("");
+                    $("#question2").val(""),
+                    $("#question3").val("");
+                    $("#question4").val("");
+                    $("#question5").val("");
+                    $("#question6").val("");
+                    $("#question7").val("");
+                    $("#question8").val("");
+                    $("#question9").val("");
+                    $("#question10").val("");
+               
+            });
+        
+        });
+
+</script>    
+</body>
+</html>
+

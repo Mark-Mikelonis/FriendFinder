@@ -3,9 +3,9 @@ var currBestMatch;
 var totalDifference =0;
 var tempScore;
 
-function findFriend(friend){
+function findFriend(){
     var totalDifference = 0;
-    tempScore = friend.scores;
+    tempScore = friends[friends.length-1].scores;
     for (var i=0;i<friends.length;i++){
        var isNewBest = compareScores(tempScore, friends[i].scores);
     //    console.log("isNewBest " + isNewBest + friends[i].name);
@@ -15,7 +15,7 @@ function findFriend(friend){
 
        } 
     }
-    // return currBestMatch;
+    // friends.push(friend);
 }
 
 function compareScores(scores1, scores2){
@@ -39,9 +39,9 @@ function compareScores(scores1, scores2){
 
 function runTests(){
     findFriend({
-        name: "Bill",
-        photo: "images/bill.jpeg",
-        scores: [2,5,7,6,3,2,4,1,5,8]
+        name: "Aria",
+        photo: "../data/images/aria.jpeg",
+        scores: [5,2,8,9,4,6,1,2,3,4]
     });
     return currBestMatch;
 }
@@ -49,52 +49,52 @@ function runTests(){
 var friends = [
     {
         name:"Chris",
-        photo: "images/chris.jpeg",
+        photo: "../data/images/chris.jpeg",
         scores: [5,1,4,4,5,1,2,5,4,1]
     },
     {
         name: "Jimmy",
-        photo: "images/jimmy.jpeg",
+        photo: "../data/images/jimmy.jpeg",
         scores: [7,5,9,3,1,5,4,2,1,9]
     },
     {
         name: "Aria",
-        photo: "images/aria.jpeg",
+        photo: "../data/images/aria.jpeg",
         scores: [5,2,8,9,4,6,1,2,3,4]
     },
     {
         name: "Bill",
-        photo: "images/bill.jpeg",
+        photo: "../data/images/bill.jpeg",
         scores: [2,5,7,6,3,2,4,1,5,8]
     },
     {
         name:"Job",
-        photo: "images/job.jpeg",
+        photo: "../data/images/job.jpeg",
         scores: [6,5,1,4,5,8,3,6,9,8]
     },
     {
         name: "Jill",
-        photo: "images/jill.jpeg",
+        photo: "../data/images/jill.jpeg",
         scores: [4,5,8,2,3,6,8,7,4,5]
     },
     {
         name: "James",
-        photo: "images/james.jpeg",
+        photo: "../data/images/james.jpeg",
         scores: [2,5,4,7,8,5,1,6,6,9]
     },
     {
         name: "Joanne",
-        photo: "images/joanne.jpeg",
+        photo: "../data/images/joanne.jpeg",
         scores: [7,2,5,8,6,3,1,4,1,2]
     },
     {
         name: "Betty",
-        photo: "images/betty.jpeg",
+        photo: "../data/images/betty.jpeg",
         scores: [5,2,4,7,9,5,1,2,3,5]
     },
     {
         name: "Lisa",
-        photo: "images/lisa.jpeg",
+        photo: "../data/images/lisa.jpeg",
         scores: [1,2,5,2,4,6,5,1,2,8]
     },
     {
@@ -104,10 +104,11 @@ var friends = [
     },
     {
         name: "Meghan",
-        photo: "images/meghan.jpeg",
+        photo: "../data/images/meghan.jpeg",
         scores: [4,5,3,4,5,7,2,3,4,6]
     }
 ];
 
-
-console.log("runTests: " + runTests());
+findFriend();
+console.log("friends[friends.length-1]: " + friends[friends.length-1].name);
+module.exports = friends;
