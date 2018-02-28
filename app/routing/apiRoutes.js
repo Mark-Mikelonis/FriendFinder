@@ -16,6 +16,7 @@ module.exports = function(app){
         //     data = result;
         // }
         friends.push(req.body);
+        
         // var match = friends.findFriend();
 
         console.log("in API post: ");

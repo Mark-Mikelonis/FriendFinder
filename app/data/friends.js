@@ -8,9 +8,8 @@ function findFriend(){
     tempScore = friends[friends.length-1].scores;
     for (var i=0;i<friends.length;i++){
        var isNewBest = compareScores(tempScore, friends[i].scores);
-       console.log("isNewBest " + isNewBest + friends[i].name);
        if(isNewBest){
-           console.log("isNewBest: " + friends[i].name);
+       
            currBestMatch = friends[i].name;
 
        } 
@@ -21,13 +20,9 @@ function findFriend(){
 function compareScores(scores1, scores2){
     for(var i=0;i<10;i++){
         totalDifference += Math.abs(scores1[i] - scores2[i]);
-        // console.log("totalDifference: " + totalDifference);
     }
     if(totalDifference<currLowestDiff){
-        // console.log("totalDifference: " + totalDifference);
-        // console.log("currLowestDiff: " + currLowestDiff);
         currLowestDiff = totalDifference;
-        // console.log("In compareScores: " + totalDifference);
         totalDifference = 0;
         return true;
     } else {
@@ -101,7 +96,7 @@ function compareScores(scores1, scores2){
             scores: [4,5,3,4,5,7,2,3,4,6]
         }
     ]
-// findFriend();
+
 
 module.exports = friends;
 
