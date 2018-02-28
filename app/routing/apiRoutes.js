@@ -9,16 +9,18 @@ module.exports = function(app){
 
     });
 
-    app.post("/api/friends", function(req, res, callback){
+    app.post("/api/friends", function(req, res){
         // handles incoming survey results
-        var data;
-        function callback(){
-            data = res;
-        }
+        // var data;
+        // function callback(result){
+        //     data = result;
+        // }
         friends.push(req.body);
-        console.log("in API post: "+currBestMatch);
+        // var match = friends.findFriend();
+
+        console.log("in API post: ");
        
-        res.json(data);
+        res.json(friends[5]);
     });
 }
 

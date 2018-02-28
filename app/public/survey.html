@@ -148,7 +148,7 @@
                 </div>
                 <div class="modal-body">
                         <h2 id="friendName"></h2>
-                        <img id="friendImg" src="jimmy.jpg" alt="">
+                        <img id="friendImg" src="jimmy.jpeg" width="300px" height="225" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -182,7 +182,7 @@
             console.log("newFriend: " + newFriend.scores);
             var currUrl = window.location.origin;
             $.post(currUrl + "/api/friends", newFriend, function(data){
-               
+                    console.log(data);    
                     $("#friendName").text(data.name);
                     $("#friendImg").attr("src", data.photo);
                     $("#results").modal("toggle");
