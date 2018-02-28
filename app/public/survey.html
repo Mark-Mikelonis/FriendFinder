@@ -144,13 +144,11 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title">Your Match!</h5>
-                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button> -->
+                
                 </div>
                 <div class="modal-body">
                         <h2 id="friendName"></h2>
-                        <img id="friendImg" src="../data/images/jimmy.jpg" alt="">
+                        <img id="friendImg" src="jimmy.jpg" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -186,7 +184,7 @@
             $.post(currUrl + "/api/friends", newFriend, function(data){
                
                     $("#friendName").text(data.name);
-                    $("#friendImg").attr("src", currUrl + "../" + data.photo);
+                    $("#friendImg").attr("src", data.photo);
                     $("#results").modal("toggle");
                     
                     $("#name").val("");
