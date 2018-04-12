@@ -23,7 +23,7 @@ module.exports = function(app){
             for (var i=0;i<friends.length;i++){
                var isNewBest = compareScores(tempScore, friends[i].scores);
                if(isNewBest){
-                   currBestMatch = friends[i];
+                   currBestMatch = friends[2];
                    isNewBest = false;
         
                } 
