@@ -2,7 +2,8 @@
 FriendFinder is a simple app that asks the user a series of questions. When the survey is complete FriendFinder will find a match to another user who has the score with the least amount of difference 
 
 ##LINK
-![FriendFinder](https://shielded-earth-73245.herokuapp.com/ "FriendFinder")
+
+![FriendFinder](https://shielded-earth-73245.herokuapp.com/)
 
 ## INSTRUCTIONS FOR USING THE WEBSITE
   * Visit link above.
