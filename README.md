@@ -3,7 +3,7 @@ FriendFinder is a simple app that asks the user a series of questions. When the 
 
 ##LINK
 
-![FriendFinder](https://shielded-earth-73245.herokuapp.com/)
+[FriendFinder](https://shielded-earth-73245.herokuapp.com/ "FriendFinder")
 
 ## INSTRUCTIONS FOR USING THE WEBSITE
   * Visit link above.
