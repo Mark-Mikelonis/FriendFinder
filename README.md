@@ -23,7 +23,7 @@ FriendFinder is a simple app that asks the user a series of questions. When the 
   1. Clone the repo down from github by clicking the clone repo button and copying the link
   2. From the command line type the following command:
    `git clone <github clone link>` 
-    this repo clone link is `https://github.com/Mark-Mikelonis/FriendFinder`
+    this repo clone link is `git@github.com:Mark-Mikelonis/FriendFinder.git`
   3. cd into the newly cloned directory
   4. Install all npm dependencies. From the command line type the following command:
    `npm install`    
