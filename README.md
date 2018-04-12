@@ -10,7 +10,7 @@ FriendFinder is a simple app that asks the user a series of questions. When the 
   * Answer the survey questions
   * Click submit to find your new friend
 
-![FriendFinder](/public/assets/img/friend-finder.gif)
+![FriendFinder](/public/images/friend-finder.gif)
 
 ## INSTRUCTIONS FOR USING THE WEB APP
 
